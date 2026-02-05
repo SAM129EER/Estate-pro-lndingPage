@@ -32,8 +32,6 @@ This project showcases a clean UI, smooth navigation, and a well-structured comp
 
 ## 📁 Project Structure
 
-## 📁 Project Structure
-
 ```text
 src/
 ├── assets/
