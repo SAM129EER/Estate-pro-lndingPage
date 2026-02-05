@@ -2,10 +2,10 @@ import React from "react";
 import Navbar from "./Components/Navbar";
 import Header from "./Components/Header";
 import About from "./Components/About";
-import Proects from "./Components/Proects";
+import Proects from "./Components/Projects";
 import Testimonials from "./Components/Testimonials";
 import Contact from "./Components/contect";
-import Footer from "./Components/footer";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
