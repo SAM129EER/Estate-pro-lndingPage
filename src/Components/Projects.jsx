@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { assets, projectsData } from "../assets/assets";
 
-const Proects = () => {
+const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
@@ -42,12 +42,12 @@ const Proects = () => {
   };
 
   return (
-    <div className="container mx-auto py-16 pt-32 px-6 md:px-20 lg:px-34 my-full overflow-hidden" id="Projects">
-      <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
+    <div className="container px-6 py-16 pt-32 mx-auto overflow-hidden md:px-20 lg:px-34 my-full" id="Projects">
+      <div className="mb-16 text-center">
+        <h1 className="mb-4 text-4xl font-bold text-gray-800 md:text-5xl">
           Projects <span className="text-blue-600">Completed</span>
         </h1>
-        <p className="text-gray-600 text-lg font-medium">Crafting Spaces, Proving Our Work</p>
+        <p className="text-lg font-medium text-gray-600">Crafting Spaces, Proving Our Work</p>
       </div>
 
       <div 
@@ -59,7 +59,7 @@ const Proects = () => {
           <button 
             onClick={() => handleSlideChange('prev')}
             aria-label="Previous" 
-            className="p-2 rounded-full bg-white shadow-md hover:bg-gray-50 transition-all duration-300 hover:shadow-lg"
+            className="p-2 transition-all duration-300 bg-white rounded-full shadow-md hover:bg-gray-50 hover:shadow-lg"
           >
             <img 
               src={assets.left_arrow} 
@@ -70,7 +70,7 @@ const Proects = () => {
           <button 
             onClick={() => handleSlideChange('next')}
             aria-label="Next"
-            className="p-2 rounded-full bg-white shadow-md hover:bg-gray-50 transition-all duration-300 hover:shadow-lg"
+            className="p-2 transition-all duration-300 bg-white rounded-full shadow-md hover:bg-gray-50 hover:shadow-lg"
           >
             <img 
               src={assets.right_arrow} 
@@ -85,19 +85,19 @@ const Proects = () => {
             {visibleProjects().map((project, index) => (
               <div 
                 key={index} 
-                className="bg-white rounded-xl shadow-lg p-4 transform transition-all duration-300 hover:scale-105"
+                className="p-4 transition-all duration-300 transform bg-white shadow-lg rounded-xl hover:scale-105"
               >
                 <div className="overflow-hidden rounded-lg">
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-48 object-cover rounded-lg mb-4 hover:scale-110 transition-transform duration-500"
+                    className="object-cover w-full h-48 mb-4 transition-transform duration-500 rounded-lg hover:scale-110"
                   />
                 </div>
                 <div className="text-center">
-                  <h3 className="text-xl font-bold text-gray-800 mt-4">{project.title}</h3>
-                  <p className="text-blue-600 font-semibold mt-2">{project.price}</p>
-                  <p className="text-gray-600 mt-1">{project.location}</p>
+                  <h3 className="mt-4 text-xl font-bold text-gray-800">{project.title}</h3>
+                  <p className="mt-2 font-semibold text-blue-600">{project.price}</p>
+                  <p className="mt-1 text-gray-600">{project.location}</p>
                 </div>
               </div>
             ))}
@@ -108,4 +108,4 @@ const Proects = () => {
   );
 };
 
-export default Proects;
+export default Projects;
