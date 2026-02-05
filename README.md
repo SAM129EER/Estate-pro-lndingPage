@@ -50,17 +50,4 @@ src/
 ├── index.css
 
 
-## 📸 Screenshots
 
-### Home
-![Home Page](screenshots/home.png)
-
-### Projects
-![Projects Section](screenshots/projects.png)
-
-### Testimonials
-![Testimonials Section](screenshots/testimonials.png)
-
-### Contact
-![Contact Form](screenshots/contact.png)
-```
